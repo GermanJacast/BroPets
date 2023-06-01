@@ -1,0 +1,142 @@
+/*  */
+.svg-dog {
+  min-width: 22%;
+  height: 60vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.svg-dog .dog-5 {
+  animation: body-d 1.5s infinite alternate;
+}
+.svg-dog .left-ear-d {
+  animation: ear-l 1.5s infinite alternate;
+  /* transform: rotate3d(0, 0, 1, -30deg); */
+  transform: rotateZ(-15deg);
+  transform-origin: 60% 20%;
+}
+.svg-dog .right-ear-d {
+  animation: ear-r 1.5s infinite alternate;
+  transform: rotateZ(10deg);
+  transform-origin: 70% 20%;
+}
+.svg-dog .tail {
+  animation: tail-move 1.5s infinite alternate;
+}
+.svg-dog .dog-9,
+.svg-dog .dog-10,
+.svg-dog .dog-11 {
+  animation: eyes-blinks 1.2s infinite alternate;
+  transform: rotate3d(1, 0, 0, 88deg);
+  transform-origin: 15% 15%;
+}
+.svg-dog .dog-bone {
+  fill: #fff;
+  animation: bone 1s infinite alternate;
+  transform: rotateZ(10deg);
+  transform-origin: 65% 35%;
+}
+
+/* Keyframes */
+@keyframes body-d {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+@keyframes tail-move {
+  0% {
+    transform: rotateZ(-8deg);
+    transform-origin: 50% 50%;
+  }
+  20% {
+    transform: rotateZ(8deg);
+    transform-origin: 50% 50%;
+  }
+  40% {
+    transform: rotateZ(-8deg);
+    transform-origin: 50% 50%;
+  }
+  60% {
+    transform: rotateZ(8deg);
+    transform-origin: 50% 50%;
+  }
+  80% {
+    transform: rotateZ(-8deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotateZ(8deg);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes ear-l {
+  0% {
+    transform: rotateZ(-14deg);
+    transform-origin: 60% 20%;
+  }
+  100% {
+    transform: rotateZ(5deg);
+    transform-origin: 60% 20%;
+  }
+}
+@keyframes ear-r {
+  0% {
+    transform: rotateZ(10deg);
+    transform-origin: 70% 20%;
+  }
+  100% {
+    transform: rotateZ(-5deg);
+    transform-origin: 70% 20%;
+  }
+  /* 0% {
+    transform: rotateZ(-2deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotateZ(10deg);
+    transform-origin: 50% 30%;
+  } */
+}
+@keyframes eyes-blinks {
+  0% {
+    transform: rotate3d(1, 0, 0, 88deg);
+    transform-origin: 15% 15%;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes bone {
+  0% {
+    transform: rotateZ(10deg);
+    transform-origin: 65% 35%;
+  }
+  100% {
+    transform: rotateZ(-10deg);
+    transform-origin: 65% 35%;
+  }
+}
+
+/* Media */
+@media (max-width: 1024px) {
+  .svg-dog {
+    height: 55vh;
+  }
+}
+@media (max-width: 800px) {
+  .svg-dog {
+    width: 35%;
+    height: 37vh;
+    left: 4%;
+  }
+}
+@media (max-width: 520px) {
+  .svg-dog {
+    width: 45%;
+    height: 40vh;
+  }
+}

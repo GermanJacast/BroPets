@@ -1,0 +1,96 @@
+.container-list-lost {
+  min-width: 90vw;
+  min-height: 100vh;
+  position: relative;
+}
+.container-list-lost .padd-list-lost {
+  padding: calc(25px + 2%) 0;
+  background-color: var(--bns-color);
+  opacity: var(--opacity);
+}
+
+/*  */
+.container-list-lost .understand-lost {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  position: relative;
+  padding-bottom: 4%;
+}
+.understand-lost h2 {
+  width: 60%;
+  font-size: 2.2em;
+  margin: 0 auto 2%;
+  color: var(--title-color);
+}
+.understand-lost p {
+  width: 60%;
+  margin: 1% auto 0;
+  font-size: 1.2em;
+  line-height: 1.4em;
+  color: var(--secondary-color);
+}
+.understand-lost p:last-of-type {
+  color: var(--primary-color);
+  font-size: 1.4em;
+}
+.understand-lost p a {
+  font-size: 1em;
+  color: var(--secondary-color);
+  transition: 0.6s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.understand-lost p a:hover {
+  color: var(--title-color);
+}
+/* Media */
+@media (max-width: 800px) {
+  .understand-lost h2 {
+    width: 80%;
+  }
+  .understand-lost p {
+    width: 80%;
+  }
+}
+/* Tips */
+.container-list-lost .tips-lost {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 4%;
+}
+.tips-lost h2 {
+  width: 60%;
+  font-size: 2.2em;
+  margin: 0 auto 2%;
+  color: var(--title-color);
+}
+.tips-lost .content-tips {
+  width: 60%;
+  margin: auto;
+}
+.content-tips li {
+  margin: 1% 0 0;
+  padding: 1%;
+  color: var(--title-color);
+  list-style: decimal;
+  font-size: 1.2em;
+}
+.content-tips p {
+  font-size: 1em;
+  line-height: 1.4em;
+  color: var(--secondary-color);
+}
+.content-tips p span {
+  font-size: 1em;
+  color: var(--primary-color);
+}
+@media (max-width: 800px) {
+  .tips-lost h2 {
+    width: 80%;
+  }
+  .tips-lost .content-tips {
+    width: 80%;
+  }
+}

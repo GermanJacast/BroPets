@@ -1,0 +1,219 @@
+.container-home {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.container-home .background-pet {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.16;
+  background-image: url("../images/background-pet.png");
+  background-repeat: repeat;
+  background-size: cover;
+}
+/*  */
+.container-home .banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  box-shadow: 0 0 4px 2px var(--quaternary-color);
+}
+.banner .backg {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--extra-color);
+  opacity: 0.6;
+}
+.banner img {
+  width: 100%;
+  height: 100vh;
+}
+/*  */
+.banner .pets {
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: -10px 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 2;
+}
+.banner .pets svg {
+  filter: drop-shadow(3px 5px 2px rgba(0 0 0 / 0.4));
+}
+/*  */
+.banner .bn {
+  position: absolute;
+  top: 0;
+  right: 4%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 40%;
+}
+.bn .bn-text {
+  width: 90%;
+  text-align: center;
+}
+.bn-text h2 {
+  font-size: 4em;
+  font-weight: 900;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 1px var(--tertiary-color);
+}
+.bn-text h3 {
+  font-size: 2em;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.bn-text p {
+  font-size: 1em;
+  font-weight: 700;
+  padding: 2%;
+  color: var(--primary-color);
+  line-height: 1.4;
+}
+.bn .bn-button {
+  width: 90%;
+  text-align: center;
+  z-index: 2;
+}
+.bn-button .buy,
+.bn-button .explore {
+  padding: 2%;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 30%;
+  margin: 2%;
+  border-radius: 16px;
+  cursor: pointer;
+  text-shadow: 1.4px 1px 0px var(--dark-color);
+  transition: 0.5s;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.bn-button .buy::before,
+.bn-button .explore::before {
+  content: "";
+  top: 0;
+  left: -100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  transition: 0.6s;
+  z-index: -1;
+}
+.bn-button .buy:hover::before,
+.bn-button .explore:hover::before {
+  left: 0;
+}
+.bn-button .buy {
+  background-color: transparent;
+  outline: 3px dashed var(--tertiary-color);
+  color: var(--tertiary-color);
+}
+.bn-button .buy::before {
+  background-color: var(--tertiary-color);
+}
+.bn-button .buy:hover {
+  outline: 3px solid var(--tertiary-color);
+  color: var(--light-color);
+  font-weight: 600;
+}
+.bn-button .explore {
+  background-color: transparent;
+  outline: 3px dashed var(--quaternary-color);
+  color: var(--quaternary-color);
+}
+.bn-button .explore:before {
+  background-color: var(--quaternary-color);
+}
+.bn-button .explore:hover {
+  outline: 3px solid var(--quaternary-color);
+  color: var(--light-color);
+  font-weight: 600;
+}
+@media (max-width: 1024px) {
+  .container-home .banner .bn {
+    height: 100vh;
+    width: 50%;
+    right: 0;
+  }
+}
+@media (max-width: 800px) {
+  .container-home .banner .bn {
+    width: 100%;
+    height: 70vh;
+  }
+  .bn .bn-text {
+    width: 91%;
+  }
+  .bn .bn-button {
+    width: 91%;
+  }
+}
+@media (max-width: 520px) {
+  .container-home .banner .bn {
+    height: 65vh;
+  }
+  .bn .bn-text h2 {
+    font-size: 3em;
+  }
+  .bn .bn-text h3 {
+    font-size: 1.5em;
+  }
+  .bn .bn-text p {
+    font-size: 1em;
+    line-height: 1.2;
+  }
+  .bn .bn-button button {
+    width: 40%;
+  }
+}
+
+/* Wave */
+.wave {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: var(--bns-color);
+  opacity: var(--opacity);
+  /*  */
+  z-index: -2;
+}
+.wave svg {
+  position: absolute;
+  max-height: 200px;
+  width: 100%;
+}
+.wave.wave-bns {
+  background-color: var(--bns-color);
+}
+.wave.wave-bnp {
+  background-color: var(--bnp-color);
+}
+.wave.md {
+  transform: scaleX(-1);
+}
+.wave.wave-bnp .cls-1 {
+  fill: var(--bns-color);
+  opacity: 0.55;
+  fill-rule: evenodd;
+}
+.wave.wave-bns .cls-1 {
+  fill: var(--bnp-color);
+  opacity: 0.55;
+  fill-rule: evenodd;
+}

@@ -1,0 +1,83 @@
+/* import */
+/* @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"); */
+/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,1000&display=swap");
+/* General */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  /* font-family: "La Belle Aurore", cursive; */
+  /* font-family: "Poppins", sans-serif; */
+}
+
+/* Variables */
+:root {
+  /*
+  #5DADE2 azul (pez)
+  #48C9B0 verde (pajaro)
+    #F5B041 anaranjado (perro)
+    #FADBD8 rosa (conejo)
+    #FAD7A0 anaranjado (escudo) 
+  */
+  --primary-color: #5dade2;
+  --secondary-color: #48c9b0;
+  --tertiary-color: #f5b041;
+  --quaternary-color: #fadbd8;
+
+  --shield-color: #fad7a0;
+  --light-color: #fff;
+  --dark-color: #000;
+
+  --extra-color: transparent;
+
+  --title-color: #f5b041;
+
+  --bnp-color: #bdfedc;
+  --bns-color: #defebd;
+  --opacity: 1;
+  --brightness: 1;
+}
+body {
+  user-select: none;
+}
+.App {
+  z-index: -99;
+}
+.dark-mode {
+  --primary-color: #1a5276;
+  --secondary-color: #34495e;
+  --tertiary-color: #e67e22;
+  --quaternary-color: #9423c1;
+
+  --extra-color: #34495e;
+
+  --title-color: #6c3982;
+
+  --bnp-color: #2c3e50;
+  --bns-color: #7f8c8d;
+  --opacity: 0.6;
+  --brightness: 0.8;
+}
+
+/* B_N */
+.bn-primary-color,
+.bn-secondary-color {
+  width: 100%;
+  height: 100%;
+  opacity: var(--opacity);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+.bn-primary-color {
+  background-color: var(--bnp-color);
+}
+.bn-secondary-color {
+  background-color: var(--bns-color);
+}

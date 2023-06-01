@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "brand": "Marca X",
+        "nameProduct": "Comida",
+        "price": 100,
+        "urlImage": "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 2,
+        "brand": "Marca X",
+        "nameProduct": "Comida2",
+        "price": 200,
+        "urlImage": "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 3,
+        "brand": "Marca X",
+        "nameProduct": "Comida3",
+        "price": 300,
+        "urlImage": "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+        "quantity": 1
+    },
+    {
+        "id": 4,
+        "brand": "Marca X",
+        "nameProduct": "Comida4",
+        "price": 400,
+        "urlImage": "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+        "quantity": 1
+    }
+]

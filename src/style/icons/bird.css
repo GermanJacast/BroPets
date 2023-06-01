@@ -1,0 +1,83 @@
+.svg-bird {
+  min-width: 15%;
+  height: 50vh;
+  position: absolute;
+  bottom: 0;
+  left: 480px;
+}
+.svg-bird .bird-4 {
+  animation: body-b 1.5s infinite alternate;
+}
+.svg-bird .bird-5,
+.svg-bird .bird-8,
+.svg-bird .bird-9,
+.svg-bird .bird-10,
+.svg-bird .bird-11,
+.svg-bird .bird-eye,
+.svg-bird .lines .bird-3 {
+  animation: head-b 1.5s infinite alternate;
+  transform: rotateZ(-3deg);
+  transform-origin: 30% 20%;
+}
+.svg-bird .mouth-up {
+  animation: mouth-up 1.5s infinite alternate;
+}
+.svg-bird .mouth-down {
+  animation: mouth-down 1.5s infinite alternate;
+}
+/* Keyframes */
+@keyframes body-b {
+  0% {
+    transform: scale(0.99);
+  }
+  100% {
+    transform: scale(1.011);
+  }
+}
+@keyframes head-b {
+  0% {
+    transform: rotateZ(-4deg);
+    transform-origin: 25% 7%;
+  }
+  100% {
+    transform: rotateZ(3deg);
+    transform-origin: 30% 15%;
+  }
+}
+@keyframes mouth-up {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, -3px);
+  }
+}
+@keyframes mouth-down {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  100% {
+    transform: translate(0px, 7px);
+  }
+}
+/* Media */
+@media (max-width: 1024px) {
+  .svg-bird {
+    height: 45vh;
+    left: 340px;
+  }
+}
+@media (max-width: 800px) {
+  .svg-bird {
+    width: 15%;
+    height: 35vh;
+    left: 80%;
+  }
+}
+@media (max-width: 520px) {
+  .svg-bird {
+    width: 20%;
+    height: 35vh;
+    left: 76%;
+  }
+}

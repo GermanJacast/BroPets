@@ -1,0 +1,200 @@
+.container-steps {
+  min-width: 90vw;
+  min-height: 40vh;
+  position: relative;
+  text-align: center;
+}
+/*  */
+.container-steps h2 {
+  width: 80%;
+  margin: 0 auto 2%;
+  font-size: 2.2em;
+  color: var(--title-color);
+}
+/*  */
+.steps {
+  width: 90%;
+  margin: auto;
+  padding: 2% 0 4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.steps .container-step {
+  width: 26%;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 1%;
+  padding: 4% 2%;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: 0.6s;
+  outline: 2px solid transparent;
+  border: 6px solid transparent;
+}
+.container-step svg {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  z-index: -1;
+  filter: drop-shadow(4px 2px 0 var(--light-color));
+}
+.container-step:hover {
+  outline-color: var(--light-color);
+  border-color: var(--bnp-color);
+}
+.container-step:hover .step {
+  left: 0;
+}
+.container-step .step {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: 0.6s;
+  position: absolute;
+  left: -110%;
+  top: 0;
+}
+.container-step .step::before {
+  background-color: var(--bns-color);
+
+  border-radius: 16px;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.6s;
+}
+.container-step .step h3 {
+  font-size: 1.6em;
+  color: var(--primary-color);
+  margin: 0 0 4%;
+}
+.container-step .step p {
+  color: var(--secondary-color);
+  line-height: 1.4em;
+}
+
+/* Media */
+@media (max-width: 900px) {
+  .steps .container-step {
+    width: 42%;
+    height: 240px;
+    margin: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .steps .container-step {
+    width: 60%;
+    height: 220px;
+  }
+}
+@media (max-width: 520px) {
+  .steps .container-step {
+    width: 90%;
+    margin: 4% 0;
+  }
+}
+
+/*  */
+/* <div class="container-paw">
+<div class="prints">
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+  <div class="paw"></div>
+</div>
+</div> */
+/* .container-paw {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  border: 1px solid red;
+}
+.prints {
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+  margin: auto;
+  padding: 6% 0;
+  transform: rotate(90deg);
+}
+.prints .paw {
+  position: relative;
+  width: 2em;
+  height: 2em;
+  opacity: 0;
+  display: none;
+  animation: 2.05s paw ease-in-out infinite;
+  margin: 3%;
+  z-index: -1;
+}
+.steps .step:hover .prints .paw {
+  display: block;
+}
+.prints .paw::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(10deg);
+  content: "\1F43E";
+  font-size: 2em;
+  filter: drop-shadow(-4px -2px 0 var(--title-color));
+}
+.prints .paw:nth-child(1) {
+  animation-delay: 1.75s;
+}
+.prints .paw:nth-child(2) {
+  animation-delay: 1.5s;
+}
+.prints .paw:nth-child(3) {
+  animation-delay: 1.25s;
+}
+.prints .paw:nth-child(4) {
+  animation-delay: 1s;
+}
+.prints .paw:nth-child(5) {
+  animation-delay: 0.75s;
+}
+.prints .paw:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.prints .paw:nth-child(7) {
+  animation-delay: 0.25s;
+}
+.prints .paw:nth-child(8) {
+  animation-delay: 0s;
+}
+@keyframes paw {
+  0% {
+    opacity: 0;
+    transform: translateY(-50%) scaleY(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translateX(0%) translateY(-50%) scaleY(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-50%) scaleY(0.8);
+  }
+} */

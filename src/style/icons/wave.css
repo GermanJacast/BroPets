@@ -1,0 +1,5 @@
+.waves .cls-1 {
+  fill: var(--bnp-color);
+  fill-rule: evenodd;
+  opacity: 0.55;
+}

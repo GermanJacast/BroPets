@@ -1,0 +1,310 @@
+/* Nav */
+.container-navigation .menu {
+  height: 50px;
+  width: 100vw;
+  position: fixed;
+  top: 2%;
+  left: 0;
+  z-index: 9;
+}
+.navigation-nav ul {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  height: 50px;
+}
+.navigation-nav ul li {
+  margin: 0 2%;
+  text-align: center;
+}
+.navigation-nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.4em;
+  filter: drop-shadow(1px 0px 0.5px var(--light-color));
+  transition: 0.6s;
+}
+.navigation-nav ul li:hover a {
+  font-size: 1.26em;
+  color: var(--primary-color);
+  transition: 0.6s;
+}
+.navigation-nav ul li a:after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0%;
+  transform: translateX(-50%);
+  height: 3px;
+  background-color: var(--primary-color);
+  transition: 0.6s;
+}
+.navigation-nav ul li a:hover:after,
+.navigation-nav ul li a:focus:after,
+.navigation-nav ul li a:active:after {
+  width: 100%;
+}
+/* Background nav */
+.menu .navigation-background {
+  background-image: linear-gradient(
+    var(--quaternary-color),
+    var(--shield-color)
+  );
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 2%;
+  right: 4%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.8s;
+}
+/* hamburguer menu */
+.menu .hamburguer-menu {
+  z-index: 1;
+  position: absolute;
+  right: 4%;
+  top: 2%;
+  height: 50px;
+  display: none;
+}
+.hamburguer-menu .icon {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamburguer-menu .icon span {
+  position: relative;
+}
+.hamburguer-menu .icon span::before,
+.hamburguer-menu .icon span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.3s;
+}
+.hamburguer-menu .icon span,
+.hamburguer-menu .icon span::before,
+.hamburguer-menu .icon span::after {
+  width: 2em;
+  height: 4px;
+  background-color: var(--primary-color);
+  display: inline-block;
+}
+.hamburguer-menu .icon span::before {
+  bottom: 0.8em;
+}
+.hamburguer-menu .icon span::after {
+  top: 0.8em;
+}
+.hamburguer-menu:hover .icon span::before {
+  bottom: 1em;
+  background-color: var(--secondary-color);
+}
+.hamburguer-menu:hover .icon span::after {
+  top: 1em;
+  background-color: var(--secondary-color);
+}
+.active-menu .icon span {
+  height: 0;
+}
+.active-menu .icon span::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.active-menu .icon span::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+.active-menu:hover .icon span::before,
+.active-menu:hover .icon span::after {
+  top: 0;
+  bottom: 0;
+  background-color: var(--secondary-color);
+  transform: rotate(0);
+}
+
+/* Media */
+@media (max-width: 800px) {
+  .menu .navigation-nav {
+    display: none;
+  }
+  .menu .hamburguer-menu {
+    display: block;
+  }
+  .active-menu ~ .navigation-background {
+    opacity: 1;
+    z-index: -1;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    right: 0;
+    transition: 0.8s;
+  }
+  .active-menu ~ .navigation-nav {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -0%);
+    width: 100%;
+  }
+  .active-menu ~ body {
+    overflow: hidden;
+  }
+  .navigation-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  .navigation-nav ul {
+    flex-direction: column;
+  }
+  .navigation-nav ul li {
+    margin: 2%;
+  }
+  .navigation-nav ul li a {
+    font-size: 1.8em;
+  }
+  .navigation-nav ul li:hover a {
+    font-size: 2em;
+    color: var(--light-color);
+  }
+}
+
+/* Change background nav (blur/background)*/
+.navigation-nav {
+  background-color: transparent;
+  background-image: none;
+  transition: 0.6s;
+}
+.change-nav {
+  height: 50px;
+  margin: -2% 0;
+  padding: 2% 0 1%;
+  /* backdrop-filter: blur(10px); */
+  /* background-image: linear-gradient(
+    var(--shield-color),
+    var(--quaternary-color)
+  ); */
+  background-color: var(--shield-color);
+  transition: 0.6s;
+  box-shadow: 0 0 4px 2px var(--quaternary-color);
+}
+/* change color */
+.toggle {
+  /* 10% */
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 4%;
+  bottom: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+.toggle input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+.toggle label {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(
+    135deg,
+    var(--quaternary-color) 10%,
+    var(--primary-color) 100%
+  );
+  border-radius: 50%;
+  position: relative;
+  transition: 0.8s;
+}
+.toggle label:hover {
+  outline: 1px dashed var(--primary-color);
+  background: linear-gradient(
+    135deg,
+    var(--primary-color) 10%,
+    var(--quaternary-color) 100%
+  );
+}
+.toggle label:after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.toggle input[type="checkbox"]:checked + label span {
+  /* left: calc(100% - 32px); */
+  rotate: 360deg;
+}
+.toggle span {
+  z-index: 1;
+  font-size: 1.6em;
+  width: 50px;
+  height: 50px;
+  top: 0;
+  left: -4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+.none-icon {
+  opacity: 0;
+}
+/* POP-Up */
+.pop-up {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  background-color: rgba(55, 51, 51, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+.none-pop {
+  display: none;
+}
+.pop-up h2,
+.pop-up span {
+  max-width: 90vw;
+  font-size: 29vw;
+  text-shadow: -4px -3px 0 var(--light-color);
+}
+.pop-up h2 {
+  color: var(--title-color);
+}
+.pop-up span {
+  color: var(--primary-color);
+}
+
+@media (max-width: 800px) {
+  /*  */
+  .change-nav {
+    background-image: none;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}

@@ -1,0 +1,257 @@
+.container-contact {
+  min-width: 90vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container-contact .left {
+  text-align: left;
+}
+/* About us */
+.container-contact .about-us {
+  padding: calc(50px + 2%) 0;
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+}
+.about-us h2 {
+  width: 60%;
+  margin: 2% auto 0;
+  font-size: 2.2em;
+  color: var(--title-color);
+}
+.about-us h2 b {
+  font-size: 1em;
+  color: var(--primary-color);
+}
+.about-us .container-about-us {
+  width: 60%;
+  margin: 2% auto;
+}
+.container-about-us .content-about-us {
+  width: 100%;
+  margin: 4% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-about-us p {
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  line-height: 1.4em;
+  /*  */
+  text-align: right;
+}
+.content-about-us img {
+  width: 50%;
+  height: 100%;
+  border-radius: 16px;
+}
+/* Media */
+@media (max-width: 800px) {
+  .about-us h2 {
+    width: 80%;
+  }
+  .about-us .container-about-us {
+    width: 80%;
+  }
+  .container-about-us .content-about-us {
+    flex-direction: column;
+  }
+  .content-about-us p {
+    width: 100%;
+    text-align: left;
+    order: 2;
+  }
+  .content-about-us img {
+    width: 100%;
+  }
+  .content-about-us .logo {
+    width: 40%;
+  }
+}
+/* Why do we do it */
+.container-contact .why-do-it {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  padding-bottom: 4%;
+}
+.why-do-it h2 {
+  width: 60%;
+  margin: 0 auto 2%;
+  font-size: 2.2em;
+  color: var(--title-color);
+}
+.why-do-it h2 b {
+  font-size: 1em;
+  color: var(--secondary-color);
+}
+.why-do-it .container-why-do-it {
+  width: 60%;
+  margin: 2% auto;
+}
+.container-why-do-it .content-why-do-it {
+  width: 100%;
+  margin: 4% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-why-do-it p {
+  width: 50%;
+  margin: auto;
+  padding: 2%;
+  font-size: 1.2em;
+  color: var(--primary-color);
+  line-height: 1.4em;
+  /*  */
+  text-align: right;
+}
+.content-why-do-it img {
+  width: 50%;
+  height: 100%;
+  border-radius: 16px;
+  outline: 2px dashed var(--light-color);
+}
+/* Media */
+@media (max-width: 800px) {
+  .why-do-it h2 {
+    width: 80%;
+  }
+  .why-do-it .container-why-do-it {
+    width: 80%;
+  }
+  .container-why-do-it .content-why-do-it {
+    flex-direction: column;
+  }
+  .content-why-do-it p {
+    width: 100%;
+    order: 2;
+    text-align: left;
+  }
+  .content-why-do-it img {
+    width: 100%;
+  }
+}
+/* Form contact  */
+.container-contact .form-contact {
+  position: relative;
+  width: 100%;
+  min-height: 40vh;
+  padding-bottom: 4%;
+}
+.form-contact h2 {
+  width: 60%;
+  margin: 0 auto 2%;
+  font-size: 2.2em;
+  color: var(--title-color);
+}
+.form-contact p {
+  width: 60%;
+  margin: auto;
+  font-size: 1.2em;
+  color: var(--secondary-color);
+  line-height: 1.4em;
+}
+.form-contact p:last-of-type {
+  color: var(--primary-color);
+}
+/*  */
+.form-contact form {
+  width: 60%;
+  margin: 4% auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.form-contact form .input-text {
+  position: relative;
+  width: 100%;
+  margin: 1% 0;
+  border-radius: 16px;
+  outline: 3px solid var(--title-color);
+  overflow: hidden;
+}
+.input-text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: var(--title-color);
+  transition: 0.6s;
+  z-index: -1;
+}
+.input-text:hover::before {
+  left: 0;
+}
+.input-text input,
+.input-text textarea,
+.input-text button {
+  width: 100%;
+  padding: 1% 2%;
+  border: none;
+  background-color: transparent;
+  color: var(--primary-color);
+  font-size: 1.2em;
+  transition: 0.6s;
+}
+.input-text textarea {
+  height: 16vh;
+  resize: none;
+  overflow: auto;
+}
+.input-text:hover input,
+.input-text:hover textarea,
+.input-text:hover button {
+  color: var(--light-color);
+}
+.input-text input:focus,
+.input-text textarea:focus,
+.input-text button:focus {
+  background-color: var(--title-color);
+  color: var(--light-color);
+}
+.input-text button {
+  cursor: pointer;
+  text-align: left;
+}
+.input-text button::after,
+.input-text button::before {
+  content: "\1F43E";
+  color: var(--light-color);
+  position: absolute;
+  transform: rotate(90deg);
+  left: -100%;
+  font-size: 1.2em;
+  filter: drop-shadow(-2px 2px 0 var(--light-color));
+  transition: 0.6s;
+}
+.input-text button:hover::after {
+  left: 94%;
+}
+.input-text button:hover::before {
+  /* right: calc(2% + 1.4em); */
+  left: calc(94% - 1.4em);
+}
+/* Media */
+@media (max-width: 800px) {
+  .form-contact h2 {
+    width: 80%;
+  }
+  .form-contact p {
+    width: 80%;
+  }
+  .form-contact form {
+    width: 80%;
+  }
+  .form-contact form .input-text {
+    margin: 1.5% 0;
+  }
+}

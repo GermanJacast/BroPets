@@ -1,0 +1,127 @@
+.svg-cat {
+  min-width: 22%;
+  height: 40vh;
+  position: absolute;
+  left: 260px;
+  bottom: 0;
+}
+.svg-cat .cat-5 {
+  animation: body 1.5s infinite alternate;
+}
+.svg-cat .tail-cat .cat-5,
+.svg-cat .tail-cat .cat-2 {
+  animation: tail 1.5s infinite alternate;
+}
+.svg-cat .left-ear {
+  animation: left-ear 4s 1.5s infinite alternate;
+}
+.svg-cat .right-ear {
+  animation: right-ear 1.5s infinite alternate;
+}
+.svg-cat .whisker {
+  animation: whisker 1.5s infinite alternate;
+}
+
+/* Keyframes */
+@keyframes tail {
+  0% {
+    transform: rotate(0) scale(0.96);
+  }
+  100% {
+    transform: rotate(2deg);
+  }
+}
+@keyframes body {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
+@keyframes whisker {
+  0% {
+    transform: rotate(-1deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotate(2deg);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes left-ear {
+  0% {
+    transform: rotateZ(0);
+  }
+  10% {
+    transform: rotateZ(-2deg);
+    transform-origin: 50% 50%;
+  }
+  20% {
+    transform: rotateZ(1deg);
+    transform-origin: 50% 50%;
+  }
+  30% {
+    transform: rotateZ(-2deg);
+    transform-origin: 50% 50%;
+  }
+  40% {
+    transform: rotateZ(1deg);
+    transform-origin: 50% 50%;
+  }
+  50% {
+    transform: rotateZ(-2deg);
+    transform-origin: 50% 50%;
+  }
+  60% {
+    transform: rotateZ(1deg);
+    transform-origin: 50% 50%;
+  }
+  100% {
+    transform: rotateZ(0);
+  }
+}
+@keyframes right-ear {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(2deg);
+    transform-origin: 35% 50%;
+  }
+}
+.svg-cat .cat-7,
+.svg-cat .cat-9 {
+  animation: eyes-blink 2s infinite alternate;
+  transform: rotate3d(1, 0, 0, 88deg);
+  transform-origin: 20% 20%;
+}
+@keyframes eyes-blink {
+  0% {
+    transform: rotate3d(1, 0, 0, 88deg);
+    transform-origin: 20% 20%;
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+/* Media */
+@media (max-width: 1024px) {
+  .svg-cat {
+    height: 35vh;
+    left: 200px;
+  }
+}
+@media (max-width: 800px) {
+  .svg-cat {
+    width: 30%;
+    height: 25vh;
+    left: 38%;
+  }
+}
+@media (max-width: 520px) {
+  .svg-cat {
+    left: 42%;
+  }
+}
