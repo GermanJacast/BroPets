@@ -39,6 +39,7 @@
 }
 .content-footer img {
   width: 100%;
+  height: 100%;
 }
 /* Media */
 @media (max-width: 800px) {

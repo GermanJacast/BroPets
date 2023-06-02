@@ -29,7 +29,9 @@
   --tertiary-color: #f5b041;
   --quaternary-color: #fadbd8;
 
-  --shield-color: #fad7a0;
+  /* --shield-color: #fad7a0; */
+  --shield-color: #ffe5bc;
+
   --light-color: #fff;
   --dark-color: #000;
 
@@ -53,6 +55,7 @@ body {
   --secondary-color: #34495e;
   --tertiary-color: #e67e22;
   --quaternary-color: #9423c1;
+  --shield-color: #fad7a0;
 
   --extra-color: #34495e;
 

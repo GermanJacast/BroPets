@@ -18,7 +18,13 @@ const Contact = () => {
         </h2>
         <div className="container-about-us">
           <div className="content-about-us">
-            <img className="logo" src={Logo} alt="Logo BroPets" />
+            <img
+              className="logo"
+              src={Logo}
+              alt="Logo que representa a BroPets"
+              title="Logo BroPets"
+              loading="lazy"
+            />
             <p className="left">
               BroPets es un proyecto dedicado a promover el amor y cuidado hacia
               las mascotas. Nos apasiona crear un mundo donde cada mascota sea
@@ -38,6 +44,8 @@ const Contact = () => {
             <img
               src={ContactTwo}
               alt="Especialista explicando los cuidados de su mascota"
+              title="Veterinario"
+              loading="lazy"
             />
           </div>
         </div>
@@ -54,7 +62,12 @@ const Contact = () => {
         </h2>
         <div className="container-why-do-it">
           <div className="content-why-do-it">
-            <img src={ContactFour} alt="Niña abranzando gato" />
+            <img
+              src={ContactFour}
+              alt="Niña abranzando gato"
+              title="Niña con su gato"
+              loading="lazy"
+            />
             <p className="left">
               En BroPets, creemos firmemente en el poder de la conexión entre
               humanos y mascotas. Nos apasiona promover el bienestar animal y
@@ -70,10 +83,20 @@ const Contact = () => {
               por ser un puente entre las mascotas en busca de un hogar y las
               personas dispuestas a brindarles una vida mejor.
             </p>
-            <img src={ContactOne} alt="Familia con un perro" />
+            <img
+              src={ContactOne}
+              alt="La famila feliz con su nuevo perro"
+              title="Familia y su perro"
+              loading="lazy"
+            />
           </div>
           <div className="content-why-do-it">
-            <img src={ContactThree} alt="Mujer sonriente jugando con perro" />
+            <img
+              src={ContactThree}
+              alt="Mujer sonriente jugando con perro"
+              title="Mujer y su perro"
+              loading="lazy"
+            />
             <p className="left">
               Cada día trabajamos con pasión y compromiso para hacer del mundo
               un lugar más amigable y compasivo para nuestros amigos de cuatro

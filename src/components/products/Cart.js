@@ -116,6 +116,7 @@ const Cart = () => {
                             className="image"
                             title={products.nameProduct}
                             alt={products.nameProduct}
+                            loading="lazy"
                           />
                         </Link>
                       </div>

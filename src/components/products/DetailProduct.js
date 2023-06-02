@@ -98,6 +98,8 @@ const DetailProduct = () => {
               <img
                 src={detailProduct.urlImage}
                 alt={detailProduct.nameProduct}
+                title={detailProduct.nameProduct}
+                loading="lazy"
               />
             </div>
             <div className="details-content">
@@ -186,6 +188,7 @@ const DetailProduct = () => {
                         className="image"
                         title={products.nameProduct}
                         alt={products.nameProduct}
+                        loading="lazy"
                       />
                     </Link>
                     <span className="brand">{products.brand}</span>

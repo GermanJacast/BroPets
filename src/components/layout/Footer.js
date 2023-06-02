@@ -42,7 +42,9 @@ const Footer = () => {
           <h3>Formas de pago</h3>
           <img
             src="http://cdn.shopify.com/s/files/1/0013/9935/7503/files/webpay-logo1_faf9fd07-8683-4715-a39b-e990828e3703_large.png?v=1522242608"
-            alt="Medios de pago"
+            alt="Medios de pago aceptados"
+            title="Formas de pago"
+            loading="lazy"
           />
         </div>
         <div className="content">

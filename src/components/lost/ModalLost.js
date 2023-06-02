@@ -21,7 +21,12 @@ const ModalLost = ({ lostData, isOpen, onClose }) => {
             <span onClick={close} />
           </div>
           <div className="modal-content">
-            <img src={lostDataItem.urlImage} alt={lostDataItem.name} />
+            <img
+              src={lostDataItem.urlImage}
+              alt={lostDataItem.name}
+              title={lostDataItem.name}
+              loading="lazy"
+            />
             <div className="modal-info">
               <div className="info">
                 <div className="data-info">
@@ -65,7 +70,15 @@ const ModalLost = ({ lostData, isOpen, onClose }) => {
           </div>
         </div>
       ) : (
-        <p>No se encontraron datos de amigos perdidos</p>
+        <div className="modal">
+          <div className="modal-header">
+            <h4>Se busca</h4>
+            <span onClick={close} />
+          </div>
+          <div className="no-data">
+            <p>No se encontraron datos del amigo perdido</p>
+          </div>
+        </div>
       )}
     </div>
   );

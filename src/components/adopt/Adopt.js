@@ -71,9 +71,9 @@ const Adopt = () => {
           {dataAdopt.filter(
             (dataAdopt) => dataAdopt.category === adopt || adopt === "all"
           ).length === 0 ? (
-            <p className="no-data">
-              No hay mascotas para adopción disponibles en esta categoría
-            </p>
+            <div className="no-data">
+              <p>No hay mascotas para adopción disponibles en esta categoría</p>
+            </div>
           ) : (
             dataAdopt
               .filter(
@@ -104,6 +104,7 @@ const Adopt = () => {
                       className="image"
                       title={dataAdopt.name}
                       alt={dataAdopt.name}
+                      loading="lazy"
                     />
                   </div>
                   <div className="info-pet">

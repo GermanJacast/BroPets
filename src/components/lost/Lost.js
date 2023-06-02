@@ -74,6 +74,7 @@ const Lost = () => {
                     className="image"
                     title={dataLost.name}
                     alt={dataLost.name}
+                    loading="lazy"
                   />
                 </div>
                 <div className="info-pet">

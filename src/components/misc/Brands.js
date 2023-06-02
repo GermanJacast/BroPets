@@ -29,12 +29,22 @@ const Brands = () => {
         <div className="slider">
           {dataBrand.map((brand) => (
             <div className="slide" key={brand.id}>
-              <img src={brand.img} alt={brand.name} />
+              <img
+                src={brand.img}
+                alt={brand.name}
+                title={brand.name}
+                loading="lazy"
+              />
             </div>
           ))}
           {dataBrand.map((brand) => (
             <div className="slide" key={brand.id}>
-              <img src={brand.img} alt={brand.name} />
+              <img
+                src={brand.img}
+                alt={brand.name}
+                title={brand.name}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>

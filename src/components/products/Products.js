@@ -116,6 +116,7 @@ const Products = () => {
                     className="image"
                     title={products.nameProduct}
                     alt={products.nameProduct}
+                    loading="lazy"
                   />
                 </Link>
                 <span className="brand">{products.brand}</span>

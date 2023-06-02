@@ -20,7 +20,12 @@ const Modal = ({ adoptData, isOpen, onClose }) => {
             <span onClick={close} />
           </div>
           <div className="modal-content">
-            <img src={adoptDataItem.urlImage} alt={adoptDataItem.name} />
+            <img
+              src={adoptDataItem.urlImage}
+              alt={adoptDataItem.name}
+              title={adoptDataItem.name}
+              loading="lazy"
+            />
             <div className="modal-info">
               <div className="info">
                 <div className="data-info">
@@ -66,7 +71,15 @@ const Modal = ({ adoptData, isOpen, onClose }) => {
           </div>
         </div>
       ) : (
-        <p>No se encontraron datos de adopción</p>
+        <div className="modal">
+          <div className="modal-header">
+            <h4>Información de adopción</h4>
+            <span onClick={close} />
+          </div>
+          <div className="no-data">
+            <p>No se encontraron datos de adopción</p>
+          </div>
+        </div>
       )}
     </div>
   );

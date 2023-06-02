@@ -9,14 +9,14 @@
 }
 /* About us */
 .container-contact .about-us {
-  padding: calc(50px + 2%) 0;
+  padding: calc(50px + 2%) 0 8%;
   position: relative;
   width: 100%;
   min-height: 40vh;
 }
 .about-us h2 {
   width: 60%;
-  margin: 2% auto 0;
+  margin: 6% auto 0;
   font-size: 2.2em;
   color: var(--title-color);
 }

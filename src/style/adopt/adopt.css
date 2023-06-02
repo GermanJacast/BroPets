@@ -331,6 +331,17 @@ path.bnr-adopt-26 {
 .list-pets-adopt .content-pet:hover button:hover::before {
   left: 0;
 }
+/* no-data */
+.list-pets-adopt .no-data {
+  width: 80%;
+  min-height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list-pets-adopt .no-data p {
+  font-size: 1.2em;
+}
 
 /* Media */
 @media (max-width: 1000px) {
