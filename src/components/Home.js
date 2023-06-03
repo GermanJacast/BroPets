@@ -3,10 +3,10 @@
 import "../style/home.css";
 //
 import Background from "../images/background-banner.png";
-import Dog from "./icons/dog.js";
-import Cat from "./icons/cat.js";
-import Fish from "./icons/fish.js";
-import Bird from "./icons/bird.js";
+// import Dog from "./icons/dog.js";
+// import Cat from "./icons/cat.js";
+// import Fish from "./icons/fish.js";
+// import Bird from "./icons/bird.js";
 //
 import Wave from "./icons/wave.js";
 //
@@ -16,6 +16,7 @@ import Adopt from "./adopt/Adopt";
 import Stepts from "./misc/Stepts";
 import Lost from "./lost/Lost";
 import Footer from "./layout/Footer";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -24,10 +25,15 @@ const Home = () => {
         <div className="background-pet" />
         <div className="banner">
           <div className="backg" />
-          <img alt="fondo del banner" title="Fondo" src={Background} />
+          <img
+            alt="fondo del banner"
+            title="Fondo"
+            src={Background}
+            loading="lazy"
+          />
 
           <div className="pets">
-            <div className="dog">
+            {/* <div className="dog">
               <Dog />
             </div>
             <div className="cat">
@@ -38,7 +44,7 @@ const Home = () => {
             </div>
             <div className="bird">
               <Bird />
-            </div>
+            </div> */}
           </div>
 
           <div className="bn">
@@ -56,8 +62,12 @@ const Home = () => {
               </p>
             </div>
             <div className="bn-button">
-              <button className="buy">Comprar</button>
-              <button className="explore">Explorar</button>
+              <button className="buy">
+                <NavLink to="/productos"> Comprar</NavLink>
+              </button>
+              <button className="explore">
+                <NavLink to="/adopcion"> Explorar</NavLink>
+              </button>
             </div>
           </div>
         </div>
