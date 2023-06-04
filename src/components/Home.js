@@ -2,7 +2,7 @@
 //
 import "../style/home.css";
 //
-// import Background from "../images/background-banner.png";
+import Background from "../images/background-banner.png";
 // import Dog from "./icons/dog.js";
 // import Cat from "./icons/cat.js";
 // import Fish from "./icons/fish.js";
@@ -25,12 +25,12 @@ const Home = () => {
         <div className="background-pet" />
         <div className="banner">
           <div className="backg" />
-          {/* <img
+          <img
             alt="fondo del banner"
             title="Fondo"
             src={Background}
             loading="lazy"
-          /> */}
+          />
 
           <div className="pets">
             {/* <div className="dog">
