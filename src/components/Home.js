@@ -3,10 +3,10 @@
 import "../style/home.css";
 //
 import Background from "../images/background-banner.png";
-// import Dog from "./icons/dog.js";
-// import Cat from "./icons/cat.js";
-// import Fish from "./icons/fish.js";
-// import Bird from "./icons/bird.js";
+import Dog from "./icons/dog.js";
+import Cat from "./icons/cat.js";
+import Fish from "./icons/fish.js";
+import Bird from "./icons/bird.js";
 //
 import Wave from "./icons/wave.js";
 //
@@ -33,7 +33,7 @@ const Home = () => {
           />
 
           <div className="pets">
-            {/* <div className="dog">
+            <div className="dog">
               <Dog />
             </div>
             <div className="cat">
@@ -44,7 +44,7 @@ const Home = () => {
             </div>
             <div className="bird">
               <Bird />
-            </div> */}
+            </div>
           </div>
 
           <div className="bn">
