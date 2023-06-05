@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BroPets/static/css/main.625fc82d.css",
-    "main.js": "/BroPets/static/js/main.0e6fc280.js",
+    "main.css": "/BroPets/static/css/main.418543c6.css",
+    "main.js": "/BroPets/static/js/main.4ecc1dd8.js",
     "static/js/787.1e92558a.chunk.js": "/BroPets/static/js/787.1e92558a.chunk.js",
     "static/media/contact02.webp": "/BroPets/static/media/contact02.a15df705512d1c0432c6.webp",
     "static/media/contact01.webp": "/BroPets/static/media/contact01.88fb96ea63ebb7a4bbd3.webp",
@@ -24,12 +24,12 @@
     "static/media/background-banner.webp": "/BroPets/static/media/background-banner.5b714f991f96b7e6b71c.webp",
     "static/media/cannes.webp": "/BroPets/static/media/cannes.8e5a2165fef23fc72def.webp",
     "index.html": "/BroPets/index.html",
-    "main.625fc82d.css.map": "/BroPets/static/css/main.625fc82d.css.map",
-    "main.0e6fc280.js.map": "/BroPets/static/js/main.0e6fc280.js.map",
+    "main.418543c6.css.map": "/BroPets/static/css/main.418543c6.css.map",
+    "main.4ecc1dd8.js.map": "/BroPets/static/js/main.4ecc1dd8.js.map",
     "787.1e92558a.chunk.js.map": "/BroPets/static/js/787.1e92558a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.625fc82d.css",
-    "static/js/main.0e6fc280.js"
+    "static/css/main.418543c6.css",
+    "static/js/main.4ecc1dd8.js"
   ]
 }
