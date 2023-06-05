@@ -33,14 +33,6 @@ const ListLost = () => {
           reunir aquellos amigos con sus seres queridos.
           <NavLink to="/contacto"> Contáctanos</NavLink>
         </p>
-        {/* <p>
-          Explora nuestra lista de mascotas perdidas y únete a nuestra comunidad
-          en este esfuerzo por devolver la alegría y el amor a los hogares
-          afectados por la pérdida. Recuerda, cada esfuerzo cuenta. Si tienes
-          alguna información sobre alguna de las mascotas listadas o deseas
-          reportar una mascota perdida, no dudes en contactarnos. Estamos aquí
-          para ayudarte en cada paso del camino.
-        </p> */}
         <div className="understand-step"></div>
       </div>
 

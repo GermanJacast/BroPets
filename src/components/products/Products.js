@@ -1,4 +1,3 @@
-// import React, { useState } from 'react'
 import { useContext, useState } from "react";
 import "../../style/products/products.css";
 import { data } from "../../data/dataProducts";

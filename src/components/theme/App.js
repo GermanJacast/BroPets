@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import { useLocation } from "react-router-dom";
 import "../../style/theme/App.css";
 import Header from "../layout/Header";
