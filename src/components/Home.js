@@ -2,7 +2,7 @@
 //
 import "../style/home.css";
 //
-import Background from "../images/background-banner.png";
+import Background from "../images/background-banner.webp";
 import Dog from "./icons/dog.js";
 import Cat from "./icons/cat.js";
 import Fish from "./icons/fish.js";

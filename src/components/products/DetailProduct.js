@@ -101,6 +101,7 @@ const DetailProduct = () => {
                 title={detailProduct.nameProduct}
                 loading="lazy"
               />
+              {/* {console.log("detailProduct.urlImage:", detailProduct.urlImage)} */}
             </div>
             <div className="details-content">
               <div className="details-text">

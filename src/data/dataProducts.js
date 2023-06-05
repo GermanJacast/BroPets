@@ -1,11 +1,19 @@
+import { dataImagesProducts } from "./dataImagesProducts";
+
+const getImageUrl = (imageName) => {
+  // console.log("imageName:", imageName);
+  const image = dataImagesProducts.find((image) => image.name === imageName);
+  // console.log("image:", image);
+  return image ? image.url : "";
+};
+
 export const data = [
   {
     id: 1,
     brand: "Marca X",
     nameProduct: "Comida de perro",
     price: 100,
-    urlImage:
-      "https://purina.cl/sites/default/files/styles/webp/public/2023-01/cachorro_medianos_grandes_carne_pollo_dogchow.png.webp?itok=62c2321C",
+    urlImage: getImageUrl("comidaPerro1"),
     quantity: 1,
     category: "dog",
     sales: 0,
@@ -16,7 +24,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de gato",
     price: 200,
-    urlImage: "",
+    urlImage: getImageUrl("comidaGato1"),
     quantity: 1,
     category: "cat",
     sales: 0,
@@ -27,8 +35,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 2",
     price: 300,
-    urlImage:
-      "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+    urlImage: getImageUrl("comidaPerro2"),
     quantity: 1,
     category: "dog",
     sales: 0,
@@ -39,8 +46,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de gato 2",
     price: 400,
-    urlImage:
-      "https://dojiw2m9tvv09.cloudfront.net/11787/product/alimentosecoparagatopurina-one-adultopolloysalmo-n9602.jpg",
+    urlImage: getImageUrl("comidaGato2"),
     quantity: 1,
     category: "cat",
     sales: 0,
@@ -51,8 +57,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 3",
     price: 500,
-    urlImage:
-      "https://purina.cl/sites/default/files/styles/webp/public/2023-01/cachorro_medianos_grandes_carne_pollo_dogchow.png.webp?itok=62c2321C",
+    urlImage: getImageUrl("comidaPerro1"),
     quantity: 1,
     category: "dog",
     sales: 0,
@@ -74,8 +79,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 4",
     price: 700,
-    urlImage:
-      "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+    urlImage: getImageUrl("comidaPerro2"),
     quantity: 1,
     category: "dog",
     sales: 0,
@@ -86,8 +90,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de gato 99",
     price: 999,
-    urlImage:
-      "https://purina.cl/sites/default/files/2023-02/PurinaLatam-CatChow-DRY-Adulto-Pescado-01.png",
+    urlImage: getImageUrl("comidaGato1"),
     quantity: 1,
     category: "cat",
     sales: 0,
@@ -111,8 +114,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 10",
     price: 100,
-    urlImage:
-      "https://purina.cl/sites/default/files/styles/webp/public/2023-01/cachorro_medianos_grandes_carne_pollo_dogchow.png.webp?itok=62c2321C",
+    urlImage: getImageUrl("comidaPerro1"),
     quantity: 1,
     category: "dog",
     sales: 1,
@@ -134,8 +136,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 12",
     price: 300,
-    urlImage:
-      "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+    urlImage: getImageUrl("comidaPerro2"),
     quantity: 1,
     category: "dog",
     sales: 1,
@@ -146,8 +147,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de gato 12",
     price: 400,
-    urlImage:
-      "https://dojiw2m9tvv09.cloudfront.net/11787/product/alimentosecoparagatopurina-one-adultopolloysalmo-n9602.jpg",
+    urlImage: getImageUrl("comidaGato2"),
     quantity: 1,
     category: "cat",
     sales: 1,
@@ -180,8 +180,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de perro 14",
     price: 700,
-    urlImage:
-      "https://7483c243aa9da28f329c-903e05bc00667eb97d832a11f670edad.ssl.cf1.rackcdn.com/20008298_1-H1DWffdz-medium.jpg",
+    urlImage: getImageUrl("comidaPerro1"),
     quantity: 1,
     category: "dog",
     sales: 1,
@@ -192,8 +191,7 @@ export const data = [
     brand: "Marca X",
     nameProduct: "Comida de gato 199",
     price: 999,
-    urlImage:
-      "https://purina.cl/sites/default/files/2023-02/PurinaLatam-CatChow-DRY-Adulto-Pescado-01.png",
+    urlImage: getImageUrl("comidaGato1"),
     quantity: 1,
     category: "cat",
     sales: 1,

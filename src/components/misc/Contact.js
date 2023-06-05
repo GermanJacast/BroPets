@@ -2,11 +2,11 @@ import React from "react";
 import "../../style/misc/contact.css";
 import Wave from "../icons/wave";
 import Footer from "../layout/Footer";
-import Logo from "../../images/Logo-BroPets.png";
-import ContactOne from "../../images/contact/contact01.jpg";
-import ContactTwo from "../../images/contact/contact02.jpg";
-import ContactThree from "../../images/contact/contact03.jpg";
-import ContactFour from "../../images/contact/contact04.jpg";
+import Logo from "../../images/Logo-BroPets.webp";
+import ContactOne from "../../images/contact/contact01.webp";
+import ContactTwo from "../../images/contact/contact02.webp";
+import ContactThree from "../../images/contact/contact03.webp";
+import ContactFour from "../../images/contact/contact04.webp";
 
 const Contact = () => {
   return (
