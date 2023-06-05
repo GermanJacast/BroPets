@@ -1,10 +1,10 @@
 import "../style/home.css";
 //
 import Background from "../images/background-banner.webp";
-// import Dog from "./icons/dog.js";
-// import Cat from "./icons/cat.js";
-// import Fish from "./icons/fish.js";
-// import Bird from "./icons/bird.js";
+import Dog from "./icons/dog.js";
+import Cat from "./icons/cat.js";
+import Fish from "./icons/fish.js";
+import Bird from "./icons/bird.js";
 //
 import Wave from "./icons/wave.js";
 //
@@ -30,7 +30,7 @@ const Home = () => {
             loading="lazy"
           />
 
-          {/* <div className="pets">
+          <div className="pets">
             <div className="dog">
               <Dog />
             </div>
@@ -43,7 +43,7 @@ const Home = () => {
             <div className="bird">
               <Bird />
             </div>
-          </div> */}
+          </div>
 
           <div className="bn">
             <div className="bn-text">
