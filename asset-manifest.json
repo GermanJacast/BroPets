@@ -1,22 +1,26 @@
 {
   "files": {
-    "main.css": "/BroPets/static/css/main.128545a1.css",
-    "main.js": "/BroPets/static/js/main.956e2b9f.js",
+    "main.css": "/BroPets/static/css/main.625fc82d.css",
+    "main.js": "/BroPets/static/js/main.2bc7649b.js",
     "static/js/787.1e92558a.chunk.js": "/BroPets/static/js/787.1e92558a.chunk.js",
-    "static/media/contact02.jpg": "/BroPets/static/media/contact02.1627263542df42fe60b3.jpg",
-    "static/media/contact01.jpg": "/BroPets/static/media/contact01.35a749934724d3b6cb48.jpg",
-    "static/media/contact04.jpg": "/BroPets/static/media/contact04.4537205cb6bfa1a7821e.jpg",
-    "static/media/contact03.jpg": "/BroPets/static/media/contact03.9a3749140554fe523e0e.jpg",
-    "static/media/background-pet.png": "/BroPets/static/media/background-pet.ad725f47d063ea264147.png",
-    "static/media/Logo-BroPets.png": "/BroPets/static/media/Logo-BroPets.4e08881b47d6c158266c.png",
-    "static/media/background-banner.png": "/BroPets/static/media/background-banner.8128c88c401213e9cd31.png",
+    "static/media/contact02.webp": "/BroPets/static/media/contact02.a15df705512d1c0432c6.webp",
+    "static/media/contact01.webp": "/BroPets/static/media/contact01.88fb96ea63ebb7a4bbd3.webp",
+    "static/media/contact04.webp": "/BroPets/static/media/contact04.582c9a644af2eec77eaa.webp",
+    "static/media/contact03.webp": "/BroPets/static/media/contact03.b45726f6edbbfbc89f80.webp",
+    "static/media/comidaGato2.webp": "/BroPets/static/media/comidaGato2.4720f3e54e082e6588ff.webp",
+    "static/media/comidaPerro1.webp": "/BroPets/static/media/comidaPerro1.75b1e349ecfa0a4230fd.webp",
+    "static/media/background-pet.webp": "/BroPets/static/media/background-pet.3cbb2e9de6f314ffd722.webp",
+    "static/media/Logo-BroPets.webp": "/BroPets/static/media/Logo-BroPets.20fd915ab3e81ffe3d3c.webp",
+    "static/media/comidaGato1.webp": "/BroPets/static/media/comidaGato1.a655435a1eafae6ad0a2.webp",
+    "static/media/comidaPerro2.webp": "/BroPets/static/media/comidaPerro2.f5b1c08f59f65d09021d.webp",
+    "static/media/background-banner.webp": "/BroPets/static/media/background-banner.5b714f991f96b7e6b71c.webp",
     "index.html": "/BroPets/index.html",
-    "main.128545a1.css.map": "/BroPets/static/css/main.128545a1.css.map",
-    "main.956e2b9f.js.map": "/BroPets/static/js/main.956e2b9f.js.map",
+    "main.625fc82d.css.map": "/BroPets/static/css/main.625fc82d.css.map",
+    "main.2bc7649b.js.map": "/BroPets/static/js/main.2bc7649b.js.map",
     "787.1e92558a.chunk.js.map": "/BroPets/static/js/787.1e92558a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.128545a1.css",
-    "static/js/main.956e2b9f.js"
+    "static/css/main.625fc82d.css",
+    "static/js/main.2bc7649b.js"
   ]
 }
