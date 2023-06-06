@@ -1,69 +1,18 @@
 import React from "react";
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
-import "../../style/products/listProducts.css";
 import { DataContext } from "../../context/DataContext";
 import { data } from "../../data/dataProducts";
+import slugify from "slugify";
+import "../../style/products/listProducts.css";
 import Products from "./Products";
 import Wave from "../icons/wave.js";
 import Footer from "../layout/Footer";
-import slugify from "slugify";
 
 const ListProducts = () => {
-  const {
-    allProducts,
-    setAllProducts,
-    total,
-    setTotal,
-    countProducts,
-    setCountProducts,
-  } = useContext(DataContext);
-
-  const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + product.quantity);
-      setTotal(total + product.price * product.quantity);
-
-      return setAllProducts([...products]);
-    }
-
-    setCountProducts(countProducts + product.quantity);
-    setTotal(total + product.price * product.quantity);
-    setAllProducts([...allProducts, product]);
-  };
-  // console.log(allProducts)
-  const onAdd = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + 1);
-      setTotal(total + product.price);
-
-      return setAllProducts([...products]);
-    }
-  };
-  const onRemove = (product) => {
-    if (
-      allProducts.find((item) => item.id === product.id && item.quantity > 1)
-    ) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
-      );
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-
-      return setAllProducts([...products]);
-    } else {
-      const results = allProducts.filter((item) => item.id !== product.id);
-      setAllProducts(results);
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-    }
-  };
+  // Use context
+  const { allProducts, onAddProduct, onAdd, onRemove } =
+    useContext(DataContext);
 
   const [petCategory, setPetCategory] = useState("all");
   const [searchTerm, setSearchTerm] = useState("");

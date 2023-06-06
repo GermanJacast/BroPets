@@ -6,13 +6,11 @@
   bottom: 0;
   left: 0;
 }
-
 .svg-dog .dog-5 {
   animation: body-d 1.5s infinite alternate;
 }
 .svg-dog .left-ear-d {
   animation: ear-l 1.5s infinite alternate;
-  /* transform: rotate3d(0, 0, 1, -30deg); */
   transform: rotateZ(-15deg);
   transform-origin: 60% 20%;
 }
@@ -92,14 +90,6 @@
     transform: rotateZ(-5deg);
     transform-origin: 70% 20%;
   }
-  /* 0% {
-    transform: rotateZ(-2deg);
-    transform-origin: 50% 50%;
-  }
-  100% {
-    transform: rotateZ(10deg);
-    transform-origin: 50% 30%;
-  } */
 }
 @keyframes eyes-blinks {
   0% {

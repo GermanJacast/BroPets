@@ -27,65 +27,9 @@ const DetailProduct = () => {
       product.id === idPart
   );
 
-  // DataContext
-  const {
-    allProducts,
-    setAllProducts,
-    total,
-    setTotal,
-    countProducts,
-    setCountProducts,
-  } = useContext(DataContext);
-
-  // Add product
-  const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + product.quantity);
-      setTotal(total + product.price * product.quantity);
-
-      return setAllProducts([...products]);
-    }
-
-    setCountProducts(countProducts + product.quantity);
-    setTotal(total + product.price * product.quantity);
-    setAllProducts([...allProducts, product]);
-  };
-
-  // +
-  const onAdd = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + 1);
-      setTotal(total + product.price);
-
-      return setAllProducts([...products]);
-    }
-  };
-
-  // -
-  const onRemove = (product) => {
-    if (
-      allProducts.find((item) => item.id === product.id && item.quantity > 1)
-    ) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
-      );
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-
-      return setAllProducts([...products]);
-    } else {
-      const results = allProducts.filter((item) => item.id !== product.id);
-      setAllProducts(results);
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-    }
-  };
+  // Use context
+  const { allProducts, onAddProduct, onAdd, onRemove } =
+    useContext(DataContext);
 
   return (
     <div className="container-detail-product">
@@ -160,6 +104,7 @@ const DetailProduct = () => {
         </div>
       )}
 
+      {/* Similar prod */}
       <div className="similar-product">
         <div className="bn-secondary-color" />
         <div className="content-similar">

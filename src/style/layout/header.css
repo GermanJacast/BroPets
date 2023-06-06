@@ -250,7 +250,6 @@
   transition: 0.8s;
 }
 .toggle input[type="checkbox"]:checked + label span {
-  /* left: calc(100% - 32px); */
   rotate: 360deg;
 }
 .toggle span {

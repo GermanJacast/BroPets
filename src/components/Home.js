@@ -1,5 +1,7 @@
 import "../style/home.css";
 //
+import { NavLink } from "react-router-dom";
+//
 import Background from "../images/background-banner.webp";
 import Dog from "./icons/dog.js";
 import Cat from "./icons/cat.js";
@@ -14,7 +16,6 @@ import Adopt from "./adopt/Adopt";
 import Stepts from "./misc/Stepts";
 import Lost from "./lost/Lost";
 import Footer from "./layout/Footer";
-import { NavLink } from "react-router-dom";
 
 const Home = () => {
   return (

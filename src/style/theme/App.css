@@ -1,6 +1,4 @@
 /* import */
-/* @import url("https://fonts.googleapis.com/css2?family=La+Belle+Aurore&display=swap"); */
-/* @import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap"); */
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,1000&display=swap");
 /* General */
 *,
@@ -11,10 +9,7 @@
   box-sizing: inherit;
   font-size: 16px;
   font-family: "Nunito", sans-serif;
-  /* font-family: "La Belle Aurore", cursive; */
-  /* font-family: "Poppins", sans-serif; */
 }
-
 /* Variables */
 :root {
   /*

@@ -83,7 +83,6 @@ path.bnr-adopt-26 {
   color: var(--primary-color);
 }
 .container-bnr-adopt .text-bnr b {
-  /* font-size: 1.8em; */
   font-size: 1em;
   color: var(--title-color);
   text-shadow: -3px 0 0 var(--light-color);
@@ -183,7 +182,6 @@ path.bnr-adopt-26 {
   min-height: 290px;
   outline: 3px dashed var(--title-color);
   background-color: var(--bns-color);
-  /* padding: 1%; */
   margin: 0 1% 2%;
   border-radius: 16px;
   position: relative;
@@ -192,9 +190,6 @@ path.bnr-adopt-26 {
   flex-direction: column;
   z-index: 1;
 }
-/* .list-pets-adopt .content-pet:hover {
-  box-shadow: -4px -3px 0 var(--tertiary-color);
-} */
 .list-pets-adopt .content-pet::before {
   content: "";
   position: absolute;
@@ -210,7 +205,6 @@ path.bnr-adopt-26 {
   top: 0;
   left: 0;
   width: 100%;
-  /* border: 2px solid var(--quaternary-color); */
   background-color: var(--quaternary-color);
   height: 100%;
 }

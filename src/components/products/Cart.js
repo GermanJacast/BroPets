@@ -6,46 +6,18 @@ import slugify from "slugify";
 
 const Cart = () => {
   const [activeCart, setActiveCart] = useState(true);
-  //
+
+  // Use context
   const {
     allProducts,
     setAllProducts,
-    total,
-    setTotal,
     countProducts,
     setCountProducts,
+    total,
+    setTotal,
+    onAdd,
+    onRemove,
   } = useContext(DataContext);
-
-  const onAdd = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + 1);
-      setTotal(total + product.price);
-
-      return setAllProducts([...products]);
-    }
-  };
-
-  const onRemove = (product) => {
-    if (
-      allProducts.find((item) => item.id === product.id && item.quantity > 1)
-    ) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
-      );
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-
-      return setAllProducts([...products]);
-    } else {
-      const results = allProducts.filter((item) => item.id !== product.id);
-      setAllProducts(results);
-      setCountProducts(countProducts - 1);
-      setTotal(total - product.price);
-    }
-  };
 
   const onDeleteProduct = (products) => {
     const results = allProducts.filter((item) => item.id !== products.id);

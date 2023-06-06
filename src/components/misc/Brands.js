@@ -27,18 +27,8 @@ const Brands = () => {
       </div>
       <div className="container-slider">
         <div className="slider">
-          {dataBrand.map((brand) => (
-            <div className="slide" key={brand.id}>
-              <img
-                src={brand.img}
-                alt={brand.name}
-                title={brand.name}
-                loading="lazy"
-              />
-            </div>
-          ))}
-          {dataBrand.map((brand) => (
-            <div className="slide" key={brand.id}>
+          {dataBrand.concat(dataBrand).map((brand, index) => (
+            <div className="slide" key={`slide-${brand.id}-${index}`}>
               <img
                 src={brand.img}
                 alt={brand.name}
