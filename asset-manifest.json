@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/BroPets/static/css/main.ce6180f0.css",
-    "main.js": "/BroPets/static/js/main.5ed0aa80.js",
+    "main.css": "/BroPets/static/css/main.90e481c3.css",
+    "main.js": "/BroPets/static/js/main.a658d83e.js",
     "static/js/787.1e92558a.chunk.js": "/BroPets/static/js/787.1e92558a.chunk.js",
     "static/media/contact02.webp": "/BroPets/static/media/contact02.a15df705512d1c0432c6.webp",
     "static/media/contact01.webp": "/BroPets/static/media/contact01.88fb96ea63ebb7a4bbd3.webp",
@@ -24,12 +24,12 @@
     "static/media/whiskas.webp": "/BroPets/static/media/whiskas.749dca223f338a9ae6b3.webp",
     "static/media/cannes.webp": "/BroPets/static/media/cannes.8e5a2165fef23fc72def.webp",
     "index.html": "/BroPets/index.html",
-    "main.ce6180f0.css.map": "/BroPets/static/css/main.ce6180f0.css.map",
-    "main.5ed0aa80.js.map": "/BroPets/static/js/main.5ed0aa80.js.map",
+    "main.90e481c3.css.map": "/BroPets/static/css/main.90e481c3.css.map",
+    "main.a658d83e.js.map": "/BroPets/static/js/main.a658d83e.js.map",
     "787.1e92558a.chunk.js.map": "/BroPets/static/js/787.1e92558a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ce6180f0.css",
-    "static/js/main.5ed0aa80.js"
+    "static/css/main.90e481c3.css",
+    "static/js/main.a658d83e.js"
   ]
 }
