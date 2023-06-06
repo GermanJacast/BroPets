@@ -89,12 +89,10 @@ const Cart = () => {
                 <h4>Carrito</h4>
                 <span>({countProducts})</span>
               </div>
-              {/* <div className='icon-close-cart'> */}
               <span
                 className="close-cart"
                 onClick={() => setActiveCart(!activeCart)}
               />
-              {/* </div> */}
             </div>
             {allProducts.length ? (
               <>

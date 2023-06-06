@@ -18,19 +18,24 @@ const Products = () => {
 
   // Add products to cart / update quantity
   const onAddProduct = (product) => {
-    if (allProducts.find((item) => item.id === product.id)) {
-      const products = allProducts.map((item) =>
-        item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
-      );
-      setCountProducts(countProducts + product.quantity);
-      setTotal(total + product.price * product.quantity);
+    let updatedProducts;
 
-      return setAllProducts([...products]);
+    if (allProducts.find((item) => item.id === product.id)) {
+      updatedProducts = allProducts.map((item) =>
+        item.id === product.id
+          ? { ...item, quantity: item.quantity + product.quantity }
+          : item
+      );
+    } else {
+      updatedProducts = [...allProducts, product];
     }
 
-    setCountProducts(countProducts + product.quantity);
-    setTotal(total + product.price * product.quantity);
-    setAllProducts([...allProducts, product]);
+    const updatedCountProducts = countProducts + product.quantity;
+    const updatedTotal = total + product.price * product.quantity;
+
+    setAllProducts(updatedProducts);
+    setCountProducts(updatedCountProducts);
+    setTotal(updatedTotal);
   };
   // console.log(allProducts)
 
@@ -94,11 +99,10 @@ const Products = () => {
         ) : (
           data
             .filter(
-              (data) => data.category === petCategory || petCategory === "all"
+              (data) =>
+                (data.category === petCategory || petCategory === "all") &&
+                data.sales >= 1
             )
-            // top sales
-            .filter((product) => product.sales >= 1)
-            //
             .map((products) => (
               <div className="products" key={products.id}>
                 {/* encrypt? */}

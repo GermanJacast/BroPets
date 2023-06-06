@@ -1,17 +1,26 @@
-import * as React from "react"
+import * as React from "react";
 
 const SvgComponent = (props) => (
   <svg
-  className="svg-adopt"
+    className="svg-adopt"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 219.25 223.17"
     {...props}
   >
     <defs>
       <style>
-        {
-          ".cat-adopt-2{fill:#fcf3ee}.cat-adopt-3{fill:#f3cbae}.cat-adopt-11,.cat-adopt-4,.cat-adopt-7{fill:#ffcdca}.cat-adopt-4{opacity:.17}.cat-adopt-4,.cat-adopt-7{mix-blend-mode:multiply}.cat-adopt-5{fill:#f37978}.cat-adopt-6{fill:#4e4041}.cat-adopt-7{opacity:.45}.cat-adopt-8{fill:none;stroke:#4e4041;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.11px}.cat-adopt-15{fill:#ffbb59}"
-        }
+        {`
+          .cat-adopt-2 { fill: #fcf3ee; }
+          .cat-adopt-3 { fill: #f3cbae; }
+          .cat-adopt-11, .cat-adopt-4, .cat-adopt-7 { fill: #ffcdca; }
+          .cat-adopt-4 { opacity: 0.17; }
+          .cat-adopt-4, .cat-adopt-7 { mix-blend-mode: multiply; }
+          .cat-adopt-5 { fill: #f37978; }
+          .cat-adopt-6 { fill: #4e4041; }
+          .cat-adopt-7 { opacity: 0.45; }
+          .cat-adopt-8 { fill: none; stroke: #4e4041; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.11px; }
+          .cat-adopt-15 { fill: #ffbb59; }
+        `}
       </style>
     </defs>
     <g
@@ -209,6 +218,6 @@ const SvgComponent = (props) => (
       </g>
     </g>
   </svg>
-)
+);
 
-export default SvgComponent
+export default SvgComponent;

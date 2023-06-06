@@ -46,7 +46,6 @@ const ListProducts = () => {
       return setAllProducts([...products]);
     }
   };
-
   const onRemove = (product) => {
     if (
       allProducts.find((item) => item.id === product.id && item.quantity > 1)
