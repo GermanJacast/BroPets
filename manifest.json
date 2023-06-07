@@ -8,9 +8,14 @@
       "type": "image/x-icon"
     },
     {
-      "src": "Logo-BroPets.png",
+      "src": "Logo-BroPets-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "Logo-BroPets-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ],
   "start_url": ".",
