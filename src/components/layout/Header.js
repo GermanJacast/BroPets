@@ -1,13 +1,14 @@
+import React from "react";
 import { useCallback, useEffect, useState } from "react";
 import { NavLink, Route, Routes } from "react-router-dom";
 import "../../style/layout/header.css";
-import Home from "../Home";
-import Productos from "../products/ListProducts";
-import Adopcion from "../adopt/ListAdopt";
-import Perdidos from "../lost/ListLost";
-import Contacto from "../misc/Contact";
-import Cart from "../products/Cart";
-import DetailProduct from "../products/DetailProduct";
+const Home = React.lazy(() => import("../Home"));
+const Productos = React.lazy(() => import("../products/ListProducts"));
+const Adopcion = React.lazy(() => import("../adopt/ListAdopt"));
+const Perdidos = React.lazy(() => import("../lost/ListLost"));
+const Contacto = React.lazy(() => import("../misc/Contact"));
+const Cart = React.lazy(() => import("../products/Cart"));
+const DetailProduct = React.lazy(() => import("../products/DetailProduct"));
 
 const Header = () => {
   const [color, setColor] = useState(false);

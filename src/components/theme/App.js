@@ -1,9 +1,11 @@
+import React from "react";
 import { useLocation } from "react-router-dom";
+import { Suspense, useEffect } from "react";
 import "../../style/theme/App.css";
 import Header from "../layout/Header";
+import Loading from "../misc/Loanding";
 //
 import DataProvider from "../../context/DataContext";
-import { useEffect } from "react";
 
 function App() {
   const location = useLocation();
@@ -31,4 +33,13 @@ function App() {
   );
 }
 
-export default App;
+function LazyApp() {
+  return (
+    <Suspense fallback={<Loading />}>
+      <App />
+    </Suspense>
+  );
+}
+
+// export default App;
+export default LazyApp;
