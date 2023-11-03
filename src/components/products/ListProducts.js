@@ -5,6 +5,7 @@ import { DataContext } from "../../context/DataContext";
 import { data } from "../../data/dataProducts";
 import slugify from "slugify";
 import "../../style/products/listProducts.css";
+import "../../style/home.css";
 import Products from "./Products";
 import Wave from "../icons/wave.js";
 import Footer from "../layout/Footer";

@@ -1,5 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import "../../style/products/detailProduct.css";
+import "../../style/products/products.css";
+import "../../style/home.css";
 import slugify from "slugify";
 import Wave from "../icons/wave.js";
 import Footer from "../layout/Footer";

@@ -8,6 +8,10 @@
 .svg-bird .bird-4 {
   animation: body-b 1.5s infinite alternate;
 }
+.svg-bird .bird-4,
+.svg-bird .bird-4-4 {
+  animation: head-b 1.5s infinite alternate;
+}
 .svg-bird .bird-5,
 .svg-bird .bird-8,
 .svg-bird .bird-9,
@@ -16,8 +20,6 @@
 .svg-bird .bird-eye,
 .svg-bird .lines .bird-3 {
   animation: head-b 1.5s infinite alternate;
-  transform: rotateZ(-3deg);
-  transform-origin: 30% 20%;
 }
 .svg-bird .mouth-up {
   animation: mouth-up 1.5s infinite alternate;

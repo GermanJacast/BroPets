@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/lost/listLost.css";
+import "../../style/home.css";
 import Lost from "./Lost";
 import Footer from "../layout/Footer";
 import Wave from "../icons/wave";
@@ -42,7 +43,7 @@ const ListLost = () => {
 
       <div className="tips-lost">
         <div className="bn-primary-color" />
-        <h2>Cómo actuar ante la pérdida de nuestro amigo</h2>
+        <h3>Cómo actuar ante la pérdida de nuestro amigo</h3>
         <div className="content-tips">
           <ul>
             <li>

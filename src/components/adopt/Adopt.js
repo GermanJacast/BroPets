@@ -4,16 +4,16 @@ import { dataAdopt } from "../../data/dataAdopt";
 import Modal from "./ModalAdopt";
 import Dog from "../icons/dog-adopt";
 import Cat from "../icons/cat-adopt";
-import Bird from "../icons/bird-adopt";
-import Rabbit from "../icons/rabbit-adopt";
 import Hamster from "../icons/hamster-adopt";
-import Fish from "../icons/fish-adopt";
 import Bnr from "../icons/more/banner-adopt";
 
 const Adopt = () => {
+  // Category
   const [adopt, setAdopt] = useState("all");
-  const [adoptData, setAdoptData] = useState([]);
+  // Modal
   const [isOpen, setIsOpen] = useState(false);
+  // Fill array adoptData
+  const [adoptData, setAdoptData] = useState([]);
 
   const modalOpen = (dataA) => {
     setAdoptData([dataA]);
@@ -27,6 +27,7 @@ const Adopt = () => {
     <div className="container-adopt">
       <div className="bn-secondary-color" />
       <div className="container-bnr-adopt">
+        <Bnr />
         <div className="text-bnr">
           <p>No compres,</p>
           <h3>ADOPTA</h3>
@@ -37,7 +38,6 @@ const Adopt = () => {
             Haz espacio en tu corazón y adopta un <b>amigo</b>
           </p>
         </div>
-        <Bnr />
       </div>
       <hr />
       <div className="title-adopt">
@@ -48,31 +48,26 @@ const Adopt = () => {
           <span onClick={() => setAdopt("dog")}>
             <Dog />
           </span>
-          <span onClick={() => setAdopt("cat")}>
-            <Cat />
-          </span>
-          <span onClick={() => setAdopt("fish")}>
-            <Fish />
-          </span>
-          <span onClick={() => setAdopt("bird")}>
-            <Bird />
-          </span>
           <span onClick={() => setAdopt("Hamsters")}>
             <Hamster />
           </span>
-          <span onClick={() => setAdopt("Rabbits")}>
-            <Rabbit />
+          <span onClick={() => setAdopt("cat")}>
+            <Cat />
           </span>
         </div>
       </div>
       <div className="container-pets">
+        {/*  */}
         <Modal adoptData={adoptData} isOpen={isOpen} onClose={modalClose} />
+        {/*  */}
         <div className="list-pets-adopt">
           {dataAdopt.filter(
             (dataAdopt) => dataAdopt.category === adopt || adopt === "all"
           ).length === 0 ? (
             <div className="no-data">
-              <p>No hay mascotas para adopción disponibles en esta categoría</p>
+              <p>
+                No hay mascotas disponibles para adopción en esta categoría.
+              </p>
             </div>
           ) : (
             dataAdopt

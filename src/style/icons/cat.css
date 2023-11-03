@@ -52,11 +52,15 @@
 
 @keyframes whisker {
   0% {
-    transform: rotate(-1deg);
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  50% {
+    transform: rotate(1.5deg);
     transform-origin: 50% 50%;
   }
   100% {
-    transform: rotate(2deg);
+    transform: rotate(0deg);
     transform-origin: 50% 50%;
   }
 }
@@ -81,7 +85,6 @@
     transform: rotateZ(0);
   }
 }
-
 @keyframes eyes-blink {
   0% {
     transform: rotate3d(1, 0, 0, 88deg);
@@ -99,7 +102,6 @@
     left: 200px;
   }
 }
-
 @media (max-width: 800px) {
   .svg-cat {
     width: 30%;
@@ -107,7 +109,6 @@
     left: 38%;
   }
 }
-
 @media (max-width: 520px) {
   .svg-cat {
     left: 42%;

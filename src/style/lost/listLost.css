@@ -18,21 +18,21 @@
   padding: 6% 0 8%;
 }
 .understand-lost h2 {
-  width: 60%;
-  font-size: 2.2em;
+  width: 70%;
+  font-size: 3.4em;
   margin: 0 auto 2%;
   color: var(--title-color);
 }
 .understand-lost p {
-  width: 60%;
+  width: 70%;
   margin: 1% auto 0;
-  font-size: 1.2em;
+  font-size: 1.35em;
   line-height: 1.4em;
   color: var(--secondary-color);
 }
 .understand-lost p:last-of-type {
   color: var(--primary-color);
-  font-size: 1.4em;
+  font-size: 1.7em;
 }
 .understand-lost p a {
   font-size: 1em;
@@ -48,9 +48,14 @@
 @media (max-width: 800px) {
   .understand-lost h2 {
     width: 80%;
+    font-size: 2.4em;
   }
   .understand-lost p {
     width: 80%;
+    font-size: 1.25em;
+  }
+  .understand-lost p:last-of-type {
+    font-size: 1.35em;
   }
 }
 /* Tips */
@@ -60,7 +65,7 @@
   height: 100%;
   padding-bottom: 4%;
 }
-.tips-lost h2 {
+.tips-lost h3 {
   width: 60%;
   font-size: 2.2em;
   margin: 0 auto 2%;
@@ -75,10 +80,9 @@
   padding: 1%;
   color: var(--title-color);
   list-style: decimal;
-  font-size: 1.2em;
 }
 .content-tips p {
-  font-size: 1em;
+  font-size: 1.35em;
   line-height: 1.4em;
   color: var(--secondary-color);
 }
@@ -87,8 +91,9 @@
   color: var(--primary-color);
 }
 @media (max-width: 800px) {
-  .tips-lost h2 {
+  .tips-lost h3 {
     width: 80%;
+    font-size: 1.6em;
   }
   .tips-lost .content-tips {
     width: 80%;

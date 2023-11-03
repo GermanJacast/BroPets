@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../style/misc/contact.css";
+import "../../style/home.css";
 import Wave from "../icons/wave";
 import Footer from "../layout/Footer";
 import Logo from "../../images/Logo-BroPets.webp";
@@ -7,14 +8,23 @@ import ContactOne from "../../images/contact/contact01.webp";
 import ContactTwo from "../../images/contact/contact02.webp";
 import ContactThree from "../../images/contact/contact03.webp";
 import ContactFour from "../../images/contact/contact04.webp";
+import { dataFQ } from "../../data/dataFQ";
 
 const Contact = () => {
+  const [fqStates, setFqStates] = useState([]);
+
+  const toggleFq = (index) => {
+    const updateFq = [...fqStates];
+    updateFq[index] = !updateFq[index];
+    setFqStates(updateFq);
+  };
+
   return (
     <div className="container-contact">
       <div className="about-us">
         <div className="bn-secondary-color" />
         <h2>
-          <b>¿</b>Quienes somos<b>?</b>
+          <b>¿</b>Quiénes somos<b>?</b>
         </h2>
         <div className="container-about-us">
           <div className="content-about-us">
@@ -28,10 +38,10 @@ const Contact = () => {
             <p className="left">
               BroPets es un proyecto dedicado a promover el amor y cuidado hacia
               las mascotas. Nos apasiona crear un mundo donde cada mascota sea
-              tratada con respeto y encuentre un hogar amoroso. Nuestro objetivo
-              es fomentar la adopción responsable y brindar recursos útiles para
-              ayudar a los dueños de mascotas a proporcionarles una vida feliz y
-              saludable.
+              tratada con respeto y sea capaz de encontrar un hogar amoroso en
+              el cual vivir. Nuestro objetivo es fomentar la adopción
+              responsable y brindar recursos útiles para ayudar a los dueños de
+              mascotas a proporcionarles una vida feliz y saludable.
             </p>
           </div>
           <div className="content-about-us">
@@ -57,9 +67,9 @@ const Contact = () => {
 
       <div className="why-do-it">
         <div className="bn-primary-color" />
-        <h2>
+        <h3>
           <b>¿</b>Por qué lo hacemos<b>?</b>
-        </h2>
+        </h3>
         <div className="container-why-do-it">
           <div className="content-why-do-it">
             <img
@@ -106,6 +116,27 @@ const Contact = () => {
             </p>
           </div>
         </div>
+
+        {/* Frecuent questions */}
+        <div className="fq-container">
+          <h3>Preguntas Frecuentes</h3>
+          <div className="fq-content">
+            {dataFQ.map((data, index) => (
+              <div
+                className={`fq-card ${fqStates[index] ? "fqA" : ""}`}
+                key={data.id}
+              >
+                <div className="fq-header" onClick={() => toggleFq(index)}>
+                  <p>{data.question}</p>
+                  <span>{fqStates[index] ? "-" : "+"}</span>
+                </div>
+                <div className="fq-footer">
+                  <p>{data.answer}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
 
       <div className="wave md wave-bnp">
@@ -114,12 +145,13 @@ const Contact = () => {
 
       <div className="form-contact">
         <div className="bn-secondary-color" />
-        <h2>Contactanos</h2>
+        <h3>Contactanos</h3>
         <p>
           Gracias por querer ponerte en contacto con nosotros. Estamos aquí para
-          responder a tus consultas y comentarios. Por favor, completa el
-          siguiente formulario con tus datos y mensaje, y nos pondremos en
-          contacto contigo lo antes posible.
+          responder todas las consultas y comentarios que tengas. Por favor,
+          completa el siguiente formulario con tus datos y mensaje que desees
+          entregarnos, y nosotros nos pondremos en contacto contigo lo antes
+          posible.
         </p>
         <p>¡Esperamos saber de ti!</p>
         <form>

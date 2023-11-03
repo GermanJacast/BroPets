@@ -91,6 +91,9 @@
   outline: 2px solid var(--title-color);
   transform: scale(1.1);
 }
+.dark-mode .container-slider:hover {
+  outline-color: var(--light-color);
+}
 .container-slider::before,
 .container-slider::after {
   background: linear-gradient(

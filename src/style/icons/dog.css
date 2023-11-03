@@ -73,7 +73,7 @@
 }
 @keyframes ear-l {
   0% {
-    transform: rotateZ(-14deg);
+    transform: rotateZ(-4deg);
     transform-origin: 60% 20%;
   }
   100% {
@@ -83,7 +83,7 @@
 }
 @keyframes ear-r {
   0% {
-    transform: rotateZ(10deg);
+    transform: rotateZ(4deg);
     transform-origin: 70% 20%;
   }
   100% {

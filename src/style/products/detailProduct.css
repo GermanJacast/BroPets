@@ -100,6 +100,11 @@
 .details-add .button-buys:hover button::before {
   left: 0;
 }
+.details-add .button-buys:hover button {
+  border-style: solid;
+  text-shadow: 1px 1px 1px var(--dark-color);
+  transition: 0.6s;
+}
 .details-add .button-buys button {
   width: 100%;
   padding: 2% 0;

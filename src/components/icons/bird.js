@@ -1,8 +1,9 @@
-import * as React from "react"
-import '../../style/icons/bird.css'
+import * as React from "react";
+import "../../style/icons/bird.css";
 
 const Bird = (props) => (
-  <svg className="svg-bird"
+  <svg
+    className="svg-bird"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 235.57 626.55"
     {...props}
@@ -55,6 +56,7 @@ const Bird = (props) => (
             d="m157.18 169.32-.82-.79c.24.25.52.47.82.79Z"
           />
           <path
+            className="bird-4-4"
             d="M163.56 141.59c.7 1.24 1.14 3.15-.12 3.82a2.63 2.63 0 0 1-2 0 30.71 30.71 0 0 1-13.52-8.58c2.06 3.44 4.18 7.14 4 11.14a2.12 2.12 0 0 1-.6 1.64 2.39 2.39 0 0 1-2.14.1A54.82 54.82 0 0 1 123 132.82a27.74 27.74 0 0 1 7.92 9.77 5.88 5.88 0 0 1 .75 2.75 4.38 4.38 0 0 1-3.4 3.73 11.41 11.41 0 0 1-5.35-.19c-22.22-4.73-40.49-21.25-52.48-40.54-9.85-15.85-18-37.87-11-53.19 3-6.6 20.23-19.82 42.67 1.35-.06 0 29.78 29.28 61.45 85.09Z"
             style={{
               fill: "#dee9ff",
@@ -182,6 +184,6 @@ const Bird = (props) => (
       </g>
     </g>
   </svg>
-)
+);
 
-export default Bird
+export default Bird;
